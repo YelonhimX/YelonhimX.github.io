@@ -5,7 +5,10 @@ description: "万千为一，一化万千"
 header-img: "img/about-bg.jpg"
 multilingual: true
 ---
-
+<!--//添加评论系统-->
+<link rel="stylesheet" href="../../../../css/gitalk.css">
+    <script src="../../../../js/gitalk.min.js"></script>
+    
 {% include multilingual-sel.html %}
 
 <!-- Chinese Version -->
@@ -19,10 +22,15 @@ multilingual: true
     {% capture about_en %}{% include about/en.md %}{% endcapture %}
     {{ about_en | markdownify }}
 </div>
-<!--//添加评论系统-->
-<link rel="stylesheet" href="../../../../css/gitalk.css">
-    <script src="../../../../js/gitalk.min.js"></script>
 
+
+<!--   gitalk       -->
+{% if site.gitalk %}
+<div class="comment">
+    {% include comments.html %}
+</div>
+{% endif %}
+<!--   gitalk  end  -->
 {% if site.disqus_username %}
 <!-- disqus 评论框 start -->
 <div class="comment">
@@ -32,12 +40,7 @@ multilingual: true
 </div>
 <!-- disqus 评论框 end -->
 
-<!--   gitalk       -->
-{% if site.gitalk %}
-<div class="comment">
-    {% include comments.html %}
-</div>
-{% endif %}
+
 
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
