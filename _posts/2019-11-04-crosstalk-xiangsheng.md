@@ -7,6 +7,7 @@ author:     "子川"
 header-img: "img/guodegang.jpeg"
 catalog: true
 tags:
+    - 传统艺术
     - 相声
     - 生活
     - 娱乐评论

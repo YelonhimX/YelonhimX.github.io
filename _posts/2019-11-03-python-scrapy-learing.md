@@ -9,6 +9,9 @@ catalog: true
 tags:
     - 爬虫
     - Python
+    - 计算机
+    - 编程
+    - 学习(笔记)
 ---
 
 # 学习Python爬虫
