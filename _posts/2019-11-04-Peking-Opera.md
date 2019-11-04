@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "京剧十三道辙口的归韵收音"
-subtitle:   "俏佳人扭捏出房来|东西南北坐"
+subtitle:   "俏佳人扭捏出房来，东西南北坐"
 date:       2019-11-04 23:40:34
 author:     "子川"
 header-img: "img/史依弘.jpg"
