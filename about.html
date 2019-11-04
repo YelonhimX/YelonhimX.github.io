@@ -56,7 +56,7 @@ multilingual: true
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <script>
     var gitalk = new Gitalk({
-        id: '{{ page.date }}',
+        id: 'window.location.pathname',
         clientID: '{{ site.gitalk.clientID }}',
         clientSecret: '{{ site.gitalk.clientSecret }}',
         repo: '{{ site.gitalk.repo }}',
