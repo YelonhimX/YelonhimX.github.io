@@ -129,6 +129,7 @@ except:                                 # 如果出现异常
 
         ```python
         r = requests.request('GET',url,timeout = 10)
+        ```
 
     - proxies：字典类型，设定访问代理服务器，可以增加登录认证
 
@@ -136,6 +137,7 @@ except:                                 # 如果出现异常
         pxs = {'http':'proxy1'
                     'https':'proxy2'}
         r = requests.request('GET',url,proxies = pxs)
+        ```
 
     - allow_redirects：True/False，默认为True，重定向开关
 
