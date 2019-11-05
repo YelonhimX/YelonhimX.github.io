@@ -4,7 +4,7 @@ title:      "Python数据分析与展示学习笔记(一):NumPy入门"
 subtitle:   " \"收集、分析、表达\""
 date:       2019-11-05 17:22:52
 author:     "子川"
-header-img: "img/数据分析.jpg"
+header-img: "img/data_analyse.jpg"
 catalog: true
 tags:
     - 爬虫
