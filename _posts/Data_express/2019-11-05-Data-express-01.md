@@ -94,14 +94,14 @@ tags:
 
         ```python
         def pySum():
-                    a = [0,1,2,3,4]
-                    b = [9,8,7,6,5]
-                        c =[]   
+            a = [0,1,2,3,4]
+            b = [9,8,7,6,5]
+            c =[]   
             for i in range(len(a)):
-                        c.append(a[i]**2 + b[i]**3)
+                c.append(a[i]**2 + b[i]**3)
             return c
-        print(pySum())
 
+        print(pySum())
         ```
 
         引用ndarray数组后：
@@ -113,7 +113,7 @@ tags:
           b = np.array([9,8,7,6,5])
 
           c = a**2 + b**3
-          #将数组a，b当成两个数据，在维度相同是可以直接进行运算
+          #将数组a，b当成两个数据，在维度相同时可以直接进行运算
 
           return c
 
