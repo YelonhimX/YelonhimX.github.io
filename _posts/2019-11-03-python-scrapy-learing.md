@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Python爬虫学习笔记"
-subtitle:   " \"苟日新，又日新，日日新。\""
+subtitle:   " \"苟日新，日日新，又日新。\""
 date:       2019-11-03 18:57:40
 author:     "子川"
 header-img: "img/post-bg-infinity.jpg"
