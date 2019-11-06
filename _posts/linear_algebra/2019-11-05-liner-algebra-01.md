@@ -6,6 +6,7 @@ date:       2019-11-06 16:58:46
 author:     "YelonhimX"
 header-img: "img/in-post/Beautyofmath1.jpg"
 catalog: true
+music-id: 559227860
 tags:
     - 生活
     - 精神折磨
@@ -31,7 +32,7 @@ tags:
     - 最基本的出发点：表示方向
     ![向量](https://raw.githubusercontent.com/YelonhimX/Code/master/Python/build/drawio_assets/math-vector.svg?sanitize=true)
     - 起始点不重要？
-      - 从(-1,-1)到(3,2)和从(0，0)到(4,3)是一样的，只是坐标系不同。
+      - 从$(-1,-1)$到$(3,2)$和从$(0，0)$到$(4,3)$是一样的，只是坐标系不同。
       - 为了研究方便，我们定义向量都从原点开始。
       - 但是顺序是重要的！**即向量是一组有序的数。**
   - 如果只是表示方向，最多三个维度就够了
