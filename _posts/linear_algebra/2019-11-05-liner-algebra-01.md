@@ -55,23 +55,30 @@ tags:
 - 更严格的一些定义：
   - 和向量相对应，一个数字，称为**标量**
   - 代数，用符号代表数。和标量相区别，向量的符号画箭头：
-  $$
-  \vec{v}
-  $$
+  
+    $$
+    \vec{v}
+    $$
+
   - 个别情况下，尤其是几何学中，我们会考虑向量的起始点：
-  $$
-  \overrightarrow{OA}
-  $$  
+  
+    $$
+    \overrightarrow{OA}
+    $$
+  
   - 行向量和列向量
-  $$
-  (1,2)\qquad{行向量}\\[7pt]\\
-  \begin{pmatrix}0\\1\end{pmatrix}\qquad{列向量}
-  $$
+  
+    $$
+    (1,2)\qquad{行向量}\\[7pt]\\
+    \begin{pmatrix}0\\1\end{pmatrix}\qquad{列向量}
+    $$
+
   - 通常教材，论文，提到向量，都指向列向量
   - 由于横版印刷原因，列向量有时使用符号：
-  $$
-  (3,4)^{T}
-  $$
+  
+    $$
+    (3,4)^{T}
+    $$
 
 ### 1.3. Python代码实现向量类
 
@@ -104,10 +111,13 @@ class vector:
   $$
   - [平行四边形法则](https://baike.baidu.com/item/%E5%B9%B3%E8%A1%8C%E5%9B%9B%E8%BE%B9%E5%BD%A2%E5%AE%9A%E5%88%99/7534360?fr=aladdin)
   - 两个向量相加，相当于他们在x轴和y轴位移增量的总加和，即：
+  
   $$
   (a,b)^{T}+(c,d)^{T} = (a+c,b+d)^{T}
   $$
+
   多维空间中：
+
   $$
   \begin{pmatrix}
   v_1\\\dots\\v_n
@@ -120,9 +130,11 @@ class vector:
 
 - 数量乘法
   同理，向量与标量的乘法即多次向量的加和：
+  
   $$
   k\times(a,b)^{T} = (ka,kb)^{T} 
   $$
+  
   多维向量中同理。
 
 ### 1.5. 实现向量的基本运算
@@ -173,11 +185,14 @@ class vector:
 
 - 类比代数运算：
   - 交换律、结合律：
+  
   $$
   \vec{u} + \vec{v} = \vec{v} + \vec{u}\\[7pt]
   (\vec{u}+\vec{v}) + \vec{w} = \vec{u} + (\vec{v}+\vec{w})
   $$
+
   - 分配率：
+  
   $$
   k(\vec{u}+\vec{v}) = k\vec{u}+k\vec{v}\\[7pt]
   $$
@@ -185,10 +200,13 @@ class vector:
 ### 1.7. 零向量
 
 - 零向量不是直接定义的，而是从推导出一个性质出发
+  
   $$
   {对于任意一个向量}\vec{u}{，}{都存在一个向量}O{,}{满足：}\vec{u}+O = \vec{u}
   $$
+
 - 证明：
+  
   $$
   \vec{u} = \begin{pmatrix}u_1\\u_2\\\dots\\u_n\end{pmatrix},O = \begin{pmatrix}o_1\\o_2\\\dots\\o_n\end{pmatrix}\qquad\vec{u}+O = \begin{pmatrix}u_1\\u_2\\\dots\\u_n\end{pmatrix}
   +
@@ -202,7 +220,9 @@ class vector:
     u_1\\u_2\\\dots\\u_n
    \end{pmatrix}
   $$
+  
   即：
+  
   $$
   \left\{
       \begin{aligned}
@@ -213,7 +233,9 @@ class vector:
       \end{aligned}
       \right.
   $$
+  
   解方程得：
+  
   $$
    \left\{
       \begin{aligned}
@@ -224,18 +246,24 @@ class vector:
       \end{aligned}
       \right.
   $$
+  
   故而有向量$O$：
+  
   $$
    O = \begin{pmatrix}0\\0\\\dots\\0\end{pmatrix}
   $$
+  
   我们称这个向量，为**零向量**
   - 注意：这个**零向量**$O$没有箭头
 - 同样地：
+
 $$
 对于任意一个向量\vec{u}，都存在一个向量\overrightarrow{-u}，满足：\\[7pt]
 \vec{u}+\overrightarrow{-u} = 0
 $$
+
 上述$\overrightarrow{-u}$唯一(反证法证明)，同时注意到：
+
 $$
 \overrightarrow{-u} = -1 · \vec{u}
 $$
