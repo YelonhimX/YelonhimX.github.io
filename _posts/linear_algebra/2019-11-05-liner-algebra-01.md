@@ -6,7 +6,7 @@ date:       2019-11-06 16:58:46
 author:     "YelonhimX"
 header-img: "img/in-post/Beautyofmath1.jpg"
 catalog: true
-music-id: 559227860
+music-id: 525930084
 music-idfull:
 tags:
     - 生活
