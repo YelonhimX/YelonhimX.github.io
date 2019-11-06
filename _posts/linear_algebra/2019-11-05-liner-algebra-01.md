@@ -7,6 +7,7 @@ author:     "YelonhimX"
 header-img: "img/in-post/Beautyofmath1.jpg"
 catalog: true
 music-id: 559227860
+music-idfull:
 tags:
     - 生活
     - 精神折磨
@@ -18,6 +19,7 @@ tags:
     - 机器学习
     - 学习(笔记)
 ---
+
 # 线性代数笔记(一)
 
 ## 1. 向量
