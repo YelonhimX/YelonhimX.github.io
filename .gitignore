@@ -11,3 +11,7 @@ node_modules
 */*/.DS_Store
 .jekyll-cache
 .drawio-chrome
+.idea/
+.idea/jekyll-search.iml
+.idea/markdown-navigator.xml
+.idea/markdown-navigator/
