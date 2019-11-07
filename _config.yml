@@ -108,8 +108,11 @@ page-mathjax: true
 
 # Friends
 friends: [
-    #{
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },
+  {
+    title: "黄玄的博客",
+    href: "https://huangxuan.me/"
+  },{
+    title: "优源",
+    href: "https://duter2016.github.io/"
+  }
 ]
