@@ -10,18 +10,18 @@ multilingual: true
 
 <!-- Chinese Version -->
 <div class="zh post-container">
-    {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
-    {{ about_zh | markdownify }}
-</div>
-
-<!-- English Version -->
-<div class="en post-container">
-    {% capture about_en %}{% include about/en.md %}{% endcapture %}
-    {{ about_en | markdownify }}
-</div>
-
-
-
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=390 height=86 src="//music.163.com/outchain/player?type=2&id=22723098&auto=0&height=66"></iframe>
+        {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
+        {{ about_zh | markdownify }}
+    </div>
+    
+    <!-- English Version -->
+    <div class="en post-container">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=390 height=86 src="//music.163.com/outchain/player?type=2&id=22723098&auto=0&height=66"></iframe>
+        {% capture about_en %}{% include about/en.md %}{% endcapture %}
+        {{ about_en | markdownify }}
+    </div>
+    
 {% if site.disqus_username %}
 <!-- disqus 评论框 start -->
 <div class="comment">
