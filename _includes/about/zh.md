@@ -1,8 +1,3 @@
-
-<!-- cloud music -->
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=390 height=86 src="//music.163.com/outchain/player?type=2&id=22723098&auto=0&height=66"></iframe>
-
-
 >鹰有时飞得比鸡低，但鸡永远不能飞得比鹰高。——列宁
 
 我自认为我目前的人生经历没法写成一篇长长的自我介绍。
