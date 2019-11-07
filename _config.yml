@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: nb998522@outlook.com
 description: ""
 keyword: " 博客, 个人网站, 互联网"
-#url: "https://huangxuan.me"              # your host, for absolute URL
+url: "http://yelonhimx.wang/"              # your host, for absolute URL
 #baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
