@@ -32,7 +32,8 @@ tags:
 - **向量**(Vector)是线性代数研究的基本元素
   - 一组数有什么用？
     - 最基本的出发点：表示方向
-    ![向量](https://raw.githubusercontent.com/YelonhimX/Code/master/Python/build/drawio_assets/math-vector.svg?sanitize=true)
+    ![math-vector.jpg](https://i.loli.net/2019/11/07/PQMBvsraJbFngLt.jpg)
+    
     - 起始点不重要？
       - 从$(-1,-1)$到$(3,2)$和从$(0，0)$到$(4,3)$是一样的，只是坐标系不同。
       - 为了研究方便，我们定义向量都从原点开始。
