@@ -21,7 +21,7 @@ multilingual: true
         {% capture about_en %}{% include about/en.md %}{% endcapture %}
         {{ about_en | markdownify }}
     </div>
-    
+
 {% if site.disqus_username %}
 <!-- disqus 评论框 start -->
 <div class="comment">
@@ -55,7 +55,7 @@ multilingual: true
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <script>
     var gitalk = new Gitalk({
-        id: 'window.location.pathname',
+        id: 'About',
         clientID: '{{ site.gitalk.clientID }}',
         clientSecret: '{{ site.gitalk.clientSecret }}',
         repo: '{{ site.gitalk.repo }}',
