@@ -6,8 +6,13 @@ date:       2019-11-08 18:07:38
 author:     "YelonhimX"
 header-img: "img/in-post/Beautyofmath1.jpg"
 catalog: true
-music-id: 461340605
-music-idfull:
+Meting: true
+mserver: "netease"
+mtype: "song"
+mid: "406024527"
+murl:
+mautoplay: true
+mtheme: "#beebe9"
 tags:
     - 生活
     - 精神折磨
@@ -19,6 +24,7 @@ tags:
     - 机器学习
     - 学习(笔记)
 ---
+
 
 # 线性代数笔记(二)
 
@@ -34,7 +40,7 @@ tags:
   根据勾股定理有：
 
   $$
-  \vec{u} = \sqrt{3^2+4^2} = 5
+  \vec{u}\text{的长度} = \sqrt{3^2+4^2} = 5
   $$
 
   记作：
@@ -43,7 +49,13 @@ tags:
   ||\vec{u}|| = \sqrt{3^2+4^2} = 5
   $$
 
-  $||\vec{u}||(\text{或可作}|\vec{u}|)$即为向量的**模**
+  其中：
+
+  $$
+  ||\vec{u}||\text{，或可记作：}|\vec{u}|
+  $$
+  
+  即为向量的**模**
 
 - 三维空间内向量的模：
 
@@ -52,7 +64,7 @@ tags:
   如图：
 
   $$
-  \vec{u} = \leftarrow{OP} = (2,3,5)
+  \vec{u} = \overrightarrow{OP} = (2,3,5)
   $$
 
   则：
@@ -65,14 +77,14 @@ tags:
 
   $$
   \vec{u} = (u_1,u_2,\dots,u_n)^{T}\\[7pt]
-  ||\vec{u}|| = \sqrt{u_1^2+u_2^2+...+u_n^2}
+  |\vec{u}| = \sqrt{u_1^2+u_2^2+...+u_n^2}
   $$
 
 - 单位向量：
 
 $$
-\hat{u} = \frac{1}{||\vec{u}||}·\vec{u} \\[7pt]
-||\hat{u}|| = 1
+\hat{u} = \frac{1}{|\vec{u}|}·\vec{u} \\[7pt]
+|\hat{u}| = 1
 $$
 
 - 根据$\vec{u}$求出$\hat{u}$的过程：**归一化**，**规范化**(normalize)
@@ -152,7 +164,7 @@ $$
 更严格的说法：两个向量的**点乘**（**内积**）
 
 $$
-\vec{u}·\vec{v} = ||\vec{u}||·||\vec{v}||·\cos{\theta}
+\vec{u}·\vec{v} = |\vec{u}|·|\vec{v}|·\cos{\theta}
 $$
 
 - 证明：
