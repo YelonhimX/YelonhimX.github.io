@@ -37,6 +37,11 @@ layout: default
                     {% include cloud-music-full.html %}
                 {% endif %}
 
+                <!--qq music added in 2019-11-08 18:28:23-->
+                {% if page.qsongid}
+                    {% include qmusic.html %}
+                {% endif %}
+
 				{{ content }}
 
                 <hr style="visibility: hidden;">
@@ -111,7 +116,7 @@ layout: default
                 <!-- Friends Blog -->
                 {% if site.friends %}
                 <hr>
-                <h5>友情链接</h5>
+                <h5>FRIENDS</h5>
                 <ul class="list-inline">
                     {% for friend in site.friends %}
                         <li><a href="{{friend.href}}" target="_blank">{{friend.title}}</a></li>
