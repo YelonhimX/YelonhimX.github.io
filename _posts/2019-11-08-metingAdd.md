@@ -108,7 +108,7 @@ tags:
 </meting-js>
 ```
 
-粘贴进文件(`[[]]`改为`{{}}`)，然后在`_layouts`文件夹里的`post.html`文件中，找到：
+粘贴进文件(`[`[` 和 `]`]`改为`{``{` 和 `}``}`)，然后在`_layouts`文件夹里的`post.html`文件中，找到：
 
 ```javascript
 <!-- Post Container -->
