@@ -98,17 +98,17 @@ tags:
 
 ```JavaScript
 <meting-js
-    server = {{page.mserver}}
-    autoplay={{page.mautoplay}}
-	type= {{page.mtype}}
-    id={{page.mid}}
-    auto={{page.murl}}
-    theme={{page.mtheme}}
+    server = [[page.server]]
+    autoplay=[[page.autoplay]]
+	type= [[page.type]]
+    id=[[page.id]]
+    auto=[[page.url]]
+    theme=[[page.theme]]
     >
 </meting-js>
 ```
 
-粘贴进文件，然后在`_layouts`文件夹里的`post.html`文件中，找到：
+粘贴进文件(`[[]]`改为`{{}}`)，然后在`_layouts`文件夹里的`post.html`文件中，找到：
 
 ```javascript
 <!-- Post Container -->
@@ -141,12 +141,12 @@ tags:
 ```JavaScript
 ---
 Music: true//作为判断是否加入播放器的开关
-mserver: "netease"
-mtype: "playlist"
-mid: "39498226"
-murl:
-mautoplay: true
-mtheme: "#f43e06"
+server: "netease"
+type: "playlist"
+id: "39498226"
+url:
+autoplay: true
+theme: "#f43e06"
 ---
 ```
 
