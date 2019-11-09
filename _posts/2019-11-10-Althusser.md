@@ -2,7 +2,7 @@
 layout:     post
 title:      "阿尔都塞与上层建筑问题"
 subtitle:   "\"不变成马克思主义哲学家的情况下，在哲学中成为马克思主义者\""
-date:       2019-11-08 23:43:23
+date:       2019-11-10 3:00:47
 author:     "子川"
 header-img: "img/Maystorm.jpg"
 catalog: true
