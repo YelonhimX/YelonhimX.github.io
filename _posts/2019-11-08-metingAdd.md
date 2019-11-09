@@ -69,6 +69,9 @@ tags:
 
 ## 3. MetingJS的部署
 
+
+**2019-11-09 18:51:12加入更新：评论区Duter菊苣将三个文件里的代码合并到一个文件，可以有效节省访问时间**
+
 ### 3.1 基础部件的引入
 
 复制代码：
@@ -97,18 +100,20 @@ tags:
 将
 
 ```JavaScript
+{% raw %}
 <meting-js
-    server = [[page.server]]
-    autoplay=[[page.autoplay]]
-	type= [[page.type]]
-    id=[[page.id]]
-    auto=[[page.url]]
-    theme=[[page.theme]]
+    server = {{page.server}}
+    autoplay={{page.autoplay}}
+	type= {{page.type}}
+    id={{page.id}}
+    auto={{page.url}}
+    theme={{page.theme}}
     >
 </meting-js>
+{% endraw %}
 ```
 
-粘贴进文件(`[` 和 `]`改为`{` 和 `}`)，然后在`_layouts`文件夹里的`post.html`文件中，找到：
+粘贴进文件，然后在`_layouts`文件夹里的`post.html`文件中，找到：
 
 ```javascript
 <!-- Post Container -->
@@ -124,15 +129,15 @@ tags:
 这个内容，然后在`<!--中间一大堆代码-->`之前这个位置，找出个空来把：
 
 ```JavaScript
-
+{% raw %}
 <!--meting added -->
-               [% if page.Muisc %]
-                    [% include Music.html %]
-                [% endif %]
-
+               {% if page.Muisc %}
+                    {% include Music.html %}
+                {% endif %}
+{% endraw %}
 ```
 
-复制进去。注意把`[]`改为`{}`并且这里一定要和前面你在`_include`文件夹里建的文件名保持一致。
+复制进去。这里一定要和前面你在`_include`文件夹里建的文件名保持一致。
 
 **大功告成！**
 
