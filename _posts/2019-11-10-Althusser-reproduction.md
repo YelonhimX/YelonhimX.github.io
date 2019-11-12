@@ -9,7 +9,7 @@ catalog: true
 Meting: true
 mserver: "netease"
 mtype: "song"
-mid: 18267037"
+mid: "18267037"
 murl:
 mautoplay: false
 mtheme: "#CE1126"
