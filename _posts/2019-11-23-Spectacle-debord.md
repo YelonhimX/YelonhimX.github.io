@@ -4,7 +4,7 @@ title:      "居伊·德波的景观社会和“反电影”实践"
 subtitle:   "\"在电影中反对电影。\""
 date:       2019-11-23 22:52:47
 author:     "子川"
-header-img: "img/debord.jpg"
+header-img: "img/debord1.jpg"
 catalog: true
 Meting: true
 mserver: "netease"
@@ -16,6 +16,7 @@ mtheme: "#CE1126"
 tags:
     - 记录
     - 左翼思考
+    - 电影
     - 居伊·德波
     - 讲座
     - 学习(笔记)
