@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: nb998522@outlook.com
 description: ""
 keyword: " 博客, 个人网站, 互联网"
-url: "http://yelonhimx.wang/"              # your host, for absolute URL
+url: ""              # your host, for absolute URL
 #baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -13,7 +13,7 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username:     edwarddmz
+weibo_username:     YelonhimX
 zhihu_username:     wang-hai-zhou-10
 github_username:    YelonhimX
 twitter_username:   edwardwang1

@@ -1,0 +1,142 @@
+Jekyll终端命令指南
+====================
+
+## 在终端中打开和关闭Jekyll服务器的命令
+
+### 1. 启动Jekyll开发服务器
+
+#### 方法A：使用完整路径（最可靠）
+```bash
+& "C:\Users\123456\AppData\Local\Microsoft\WindowsApps\jekyll.bat" serve --livereload --port 4000
+```
+
+#### 方法B：如果PATH配置正确
+```bash
+jekyll serve --livereload --port 4000
+```
+
+#### 方法C：使用bundle exec（如果Gemfile配置正确）
+```bash
+bundle exec jekyll serve --livereload --port 4000
+```
+
+### 2. 停止Jekyll开发服务器
+
+#### 方法A：按Ctrl+C（在运行Jekyll的终端中）
+1. 切换到运行Jekyll的终端窗口
+2. 按下：`Ctrl + C`
+3. 等待服务器停止
+
+#### 方法B：如果Ctrl+C无效，使用命令强制停止
+```bash
+# 查找并停止占用4000端口的进程
+for /f "tokens=5" %a in ('netstat -ano ^| findstr :4000 ^| findstr LISTENING') do taskkill /PID %a /F
+```
+
+#### 方法C：分步停止
+```bash
+# 1. 查找占用4000端口的进程ID
+netstat -ano | findstr :4000
+
+# 2. 停止找到的进程（替换PID为实际数字）
+taskkill /PID <进程ID> /F
+```
+
+### 3. 检查Jekyll服务器状态
+
+```bash
+# 检查4000端口是否被占用
+netstat -ano | findstr :4000
+
+# 如果显示"LISTENING"，表示服务器正在运行
+# 如果没有输出或没有"LISTENING"，表示服务器未运行
+```
+
+### 4. 常用Jekyll命令
+
+#### 构建网站（不启动服务器）
+```bash
+& "C:\Users\123456\AppData\Local\Microsoft\WindowsApps\jekyll.bat" build
+```
+
+#### 清理构建缓存
+```bash
+# 删除_site目录
+if exist _site rmdir /s /q _site
+```
+
+#### 检查Jekyll版本
+```bash
+& "C:\Users\123456\AppData\Local\Microsoft\WindowsApps\jekyll.bat" --version
+```
+
+### 5. 快速参考脚本
+
+#### 启动脚本（start_jekyll.cmd）
+```batch
+@echo off
+chcp 65001 > nul
+echo 启动Jekyll开发服务器...
+echo 访问地址: http://localhost:4000
+echo 按Ctrl+C停止服务器
+"C:\Users\123456\AppData\Local\Microsoft\WindowsApps\jekyll.bat" serve --livereload --port 4000
+```
+
+#### 停止脚本（stop_jekyll.cmd）
+```batch
+@echo off
+chcp 65001 > nul
+echo 停止Jekyll服务器...
+for /f "tokens=5" %%a in ('netstat -ano ^| findstr :4000 ^| findstr LISTENING') do (
+    echo 停止进程ID: %%a
+    taskkill /PID %%a /F
+)
+echo Jekyll服务器已停止
+pause
+```
+
+### 6. 故障排除
+
+#### 如果"jekyll"命令找不到
+```bash
+# 检查jekyll是否在PATH中
+where jekyll
+
+# 如果找不到，使用完整路径
+& "C:\Users\123456\AppData\Local\Microsoft\WindowsApps\jekyll.bat" --version
+```
+
+#### 如果端口4000被占用
+```bash
+# 使用其他端口
+& "C:\Users\123456\AppData\Local\Microsoft\WindowsApps\jekyll.bat" serve --livereload --port 4001
+```
+
+#### 如果遇到依赖错误
+```bash
+# 清理gem缓存
+gem cleanup
+
+# 重新安装Jekyll
+gem install jekyll
+```
+
+### 7. 工作流程示例
+
+```bash
+# 1. 打开终端，进入项目目录
+cd d:\YelonhimX.github.io
+
+# 2. 启动Jekyll服务器
+& "C:\Users\123456\AppData\Local\Microsoft\WindowsApps\jekyll.bat" serve --livereload --port 4000
+
+# 3. 在浏览器中访问 http://localhost:4000
+
+# 4. 编辑您的博客内容
+
+# 5. 停止服务器（在终端中按Ctrl+C）
+# 或者使用另一个终端运行：
+# for /f "tokens=5" %a in ('netstat -ano ^| findstr :4000 ^| findstr LISTENING') do taskkill /PID %a /F
+```
+
+记住：启动服务器后，终端会保持运行状态，直到您停止服务器。不要关闭这个终端窗口，否则服务器也会停止。
